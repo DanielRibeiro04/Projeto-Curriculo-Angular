@@ -1,0 +1,36 @@
+body {
+  background-color: #878787;
+  display: flex;
+  justify-content: center;
+}
+.title {
+  color: white;
+  margin: 0;
+  font-size: 100px;
+}
+
+.items {
+  margin-top: 10px auto;
+}
+.container-main {
+  height: 70%;
+  width: 50%;
+  margin: 70px auto;
+  padding: 0rem;
+}
+
+.container-chrome {
+  list-style: none;
+}
+
+.barra-input-chrome {
+  margin: 0;
+  z-index: 3;
+  min-height: 50px;
+  background: #4d5156;
+  border: 1px solid transparent;
+  box-shadow: none;
+  border-radius: 26px;
+  width: 90%;
+  height: 32px;
+}

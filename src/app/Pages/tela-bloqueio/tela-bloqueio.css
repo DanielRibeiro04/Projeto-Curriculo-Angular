@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../../assets/paraiso.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil{
+  height: 60vh;
+  width: 30vw;
+}
+
+.foto-perfil{
+  height: 40vh;
+  width: 20vw;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  margin: 0% auto;
+}
+
+.nome-perfil{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.btn-entrar {
+  width: 7vw;
+  background-color: #ccc;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 2vh;
+  transition: 0.5s;
+}
+
+.btn-entrar:hover {
+  background-color: #aaa;
+  border: 1px solid black;
+}
