@@ -1,0 +1,32 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+.container-AT {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../../assets/windows.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .container-AT {
+    background-image: url("../../../assets/windows_mobile_menor.jpg");
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container-AT {
+    background-image: url("../../../assets/windows_mobile.jpg");
+  }
+}
+
