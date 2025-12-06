@@ -1,0 +1,74 @@
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../../assets/paraiso.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil{
+  height: 60%;
+  width: 30%;
+}
+
+.foto-perfil {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.nome-perfil{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.btn-entrar {
+  width: 50%;
+  padding: 0.2%;
+  background-color: #ccc;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+.input-senha{
+  margin: 0;
+  width: 85%;
+  padding: 3%;
+  font-size: 12px;
+
+}
+button {
+  margin: 0 auto;
+  padding: 3% 5%;
+}
+
+
+@media (max-width: 768px) {
+  .foto-perfil {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .foto-perfil {
+    max-width: 200px;
+  }
+
+  .perfil{
+    font-size: 12px;
+    width: 80%;
+  }
+
+}
+
