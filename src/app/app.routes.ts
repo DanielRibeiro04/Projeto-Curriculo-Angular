@@ -9,5 +9,7 @@ export const routes: Routes = [
    { path: 'AreaTrabalho', component: AreaTrabalho },
   { path: 'home', component: HomeComponents },
   { path: 'telaInicialChrome', component: TelaInicialChrome }
+
+
 ];
 

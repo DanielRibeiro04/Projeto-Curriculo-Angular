@@ -22,7 +22,7 @@ export class RelogioFooter implements OnInit, OnDestroy {
     this.updateTime();
     this.intervalId = setInterval(() => {
       this.updateTime();
-      this.cdr.detectChanges(); // necessário para atualizar view se OnPush
+      this.cdr.detectChanges();
     }, 1000);
   }
 
@@ -32,7 +32,7 @@ export class RelogioFooter implements OnInit, OnDestroy {
 
   private updateTime(): void {
     const now = new Date();
-    this.today = now; // Atualiza data também (em caso de virada de dia)
+    this.today = now;
     this.hours = this.fixTime(now.getHours());
     this.minutes = this.fixTime(now.getMinutes());
     this.seconds = this.fixTime(now.getSeconds());

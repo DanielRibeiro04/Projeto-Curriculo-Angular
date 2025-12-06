@@ -16,3 +16,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 1200px) {
+  .container-AT {
+    background-image: url("../../../assets/windows_mobile_menor.jpg");
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container-AT {
+    background-image: url("../../../assets/windows_mobile.jpg");
+  }
+}
+

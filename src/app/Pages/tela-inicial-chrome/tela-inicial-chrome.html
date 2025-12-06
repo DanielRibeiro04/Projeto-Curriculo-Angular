@@ -1,18 +1,24 @@
 <app-header></app-header>
+
 <body>
   <div class="container-main">
-  <div class="container-chrome">
-  <li class="items">
-    <ul>
-      <h1 class="title">Google</h1>
-    </ul>
-    <ul>
-      <input type="text" placeholder="🔎  Pesquise no Google ou escreva um URL" class="barra-input-chrome" />
-    </ul>
-    <ul><h3>Recentes</h3></ul>
-    <ul><img src="./../../../assets/docx.png" alt="imagem_googleDocumentos"></ul>
-  </li>
-</div>
-</div>
+    <div class="container-chrome">
+      <li class="items">
+        <ul>
+          <h1 class="title">Google</h1>
+        </ul>
+        <ul>
+          <input type="text" [(ngModel)]="valorDigitado" (keydown.enter)="enviar()" placeholder="🔎  Pesquise no Google ou escreva um URL" class="barra-input-chrome" />
+        </ul>
+        <div class="items-recentes">
+          <ul>
+            <h3>Recentes</h3>
+          </ul>
+          <ul><img src="./../../../assets/docx.png" alt="imagem_googleDocumentos" routerLink="/home"></ul>
+        </div>
+
+      </li>
+    </div>
+  </div>
 </body>
 <app-footer></app-footer>

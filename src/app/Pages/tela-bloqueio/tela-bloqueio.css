@@ -1,11 +1,3 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  border: 0;
-}
 
 .container {
   height: 100%;
@@ -18,18 +10,19 @@ body {
 }
 
 .perfil{
-  height: 60vh;
-  width: 30vw;
+  height: 60%;
+  width: 30%;
 }
 
-.foto-perfil{
-  height: 40vh;
-  width: 20vw;
+.foto-perfil {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border-radius: 50%;
-  text-align: center;
   display: block;
-  margin: 0% auto;
+  margin: 0 auto;
 }
+
 
 .nome-perfil{
   text-align: center;
@@ -38,16 +31,44 @@ body {
 }
 
 .btn-entrar {
-  width: 7vw;
+  width: 50%;
+  padding: 0.2%;
   background-color: #ccc;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
-  padding: 2vh;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+.input-senha{
+  margin: 0;
+  width: 85%;
+  padding: 3%;
+  font-size: 12px;
+
+}
+button {
+  margin: 0 auto;
+  padding: 3% 5%;
 }
 
-.btn-entrar:hover {
-  background-color: #aaa;
-  border: 1px solid black;
+
+@media (max-width: 768px) {
+  .foto-perfil {
+    max-width: 250px;
+  }
 }
+
+@media (max-width: 480px) {
+  .foto-perfil {
+    max-width: 200px;
+  }
+
+  .perfil{
+    font-size: 12px;
+    width: 80%;
+  }
+
+}
+
